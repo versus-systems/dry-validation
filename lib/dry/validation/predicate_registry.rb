@@ -38,7 +38,7 @@ module Dry
         Unbound.new(predicates).tap do |registry|
           klass.class_eval do
             def self.method_added(name)
-              super
+              # super
               if name.to_s.end_with?('?')
                 registry.update(name => instance_method(name))
               end

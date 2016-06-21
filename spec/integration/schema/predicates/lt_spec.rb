@@ -35,7 +35,7 @@ RSpec.describe 'Predicates: Lt' do
       let(:input) { { foo: '' } }
 
       it 'is raises error' do
-        expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+        expect { result }.to raise_error(ArgumentError, /comparison of String/)
       end
     end
 
@@ -99,7 +99,7 @@ RSpec.describe 'Predicates: Lt' do
       let(:input) { { foo: '' } }
 
       it 'is raises error' do
-        expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+        expect { result }.to raise_error(ArgumentError, /comparison of String/)
       end
     end
 
@@ -165,7 +165,7 @@ RSpec.describe 'Predicates: Lt' do
           let(:input) { { foo: '' } }
 
           it 'is raises error' do
-            expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+            expect { result }.to raise_error(ArgumentError, /comparison of String/)
           end
         end
 
@@ -293,7 +293,7 @@ RSpec.describe 'Predicates: Lt' do
           let(:input) { { foo: '' } }
 
           it 'is raises error' do
-            expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+            expect { result }.to raise_error(ArgumentError, /comparison of String/)
           end
         end
 
@@ -359,7 +359,7 @@ RSpec.describe 'Predicates: Lt' do
           let(:input) { { foo: '' } }
 
           it 'raises error' do
-            expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+            expect { result }.to raise_error(ArgumentError, /comparison of String/)
           end
         end
 
@@ -487,7 +487,7 @@ RSpec.describe 'Predicates: Lt' do
           let(:input) { { foo: '' } }
 
           it 'is raises error' do
-            expect { result }.to raise_error(ArgumentError, 'comparison of String with 23 failed')
+            expect { result }.to raise_error(ArgumentError, /comparison of String/)
           end
         end
 

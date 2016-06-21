@@ -36,13 +36,13 @@ RSpec.describe 'Predicates: custom' do
       Dry::Validation.Schema do
         configure do
           config.messages_file = 'spec/fixtures/locales/en.yml'
-          predicates (Module.new do
+          predicates (Module.new {
             include Dry::Logic::Predicates
 
             def self.email?(current)
               !current.match(/\@/).nil?
             end
-          end)
+          })
         end
 
         required(:foo) { email? }
