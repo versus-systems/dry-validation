@@ -11,7 +11,7 @@ module Dry
         none?: NilClass,
         bool?: TrueClass,
         str?: String,
-        int?: Fixnum,
+        int?: Integer,
         float?: Float,
         decimal?: BigDecimal,
         date?: Date,

@@ -21,7 +21,6 @@ module Dry
       CONST_MAP = {
         NilClass => 'form.nil',
         String => 'string',
-        Fixnum => 'form.int',
         Integer => 'form.int',
         Float => 'form.float',
         BigDecimal => 'form.decimal',
